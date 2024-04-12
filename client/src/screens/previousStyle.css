@@ -1,0 +1,58 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+:root {
+  --main-darklg: #1d2635;
+  --main-dark: #161d29;
+  --primary-color: #2f80ec;
+  --main-light: #eeeeee;
+  font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.lobby-container {
+  background-color: var(--main-dark);
+  color: white;
+  padding: 20px;
+  height: 100vh;
+}
+
+.title {
+  color: var(--main-light);
+  font-size: 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+}
+
+.button {
+  background-color: rgb(31, 27, 229);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+/* .formEle {
+  display: block;
+  justify-content: center;
+} */
