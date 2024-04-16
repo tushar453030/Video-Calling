@@ -9,8 +9,11 @@ export const useSocket = () => {
 }
 
 export const SocketProvider = (props) => {
-  // const socket = useMemo(() => io('https://video-calling-pied.vercel.app/'), [])
-  const socket = useMemo(() => io('http://localhost:8000/'), []) //here comes the server hosted link
+  const socket = useMemo(
+    () => io('https://video-calling-pied.vercel.app:8000/'),
+    []
+  )
+  // const socket = useMemo(() => io('http://localhost:8000/'), []) //here comes the server hosted link
   return (
     <SocketContext.Provider value={socket}>
       {props.children}
