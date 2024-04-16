@@ -12,6 +12,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.room-container {
+  min-height: 100vh;
+  background-color: var(--main-dark);
+  color: white;
+  display: block;
+}
+
 .lobby-container {
   background-color: var(--main-dark);
   display: block;
@@ -212,4 +219,21 @@ section {
 
 label {
   color: black;
+}
+
+/* stream screen */
+
+.video-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.child-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Optional: Adjust the height as needed */
 }
