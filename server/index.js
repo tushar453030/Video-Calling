@@ -1,7 +1,23 @@
+const express = require('express')
+const app = express()
+
 const { Server } = require('socket.io')
 var cors = require('cors')
-app.use(cors())
+const corsOptions = {
+  origin: 'https://661e79c1763d8913a27ecbda--neon-jalebi-febd55.netlify.app',
+  credentials: true, //access-control-allow-credentials:true
+  optionSuccessStatus: 200,
+}
+app.use(cors(corsOptions))
+app.use(express.json())
+app.use('/', (req, res) => {
+  res.send('Its webrtc server')
+})
+const port = process.env.PORT || 3000
 
+app.listen(port, '0.0.0.0', () => {
+  console.log('Backend server is running')
+})
 const io = new Server(8000, {
   cors: true,
 })
