@@ -11,7 +11,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json())
 app.use('/', (req, res) => {
-  res.send('Its webrtc server')
+  res.send('Its webrtc server for you')
 })
 const port = process.env.PORT || 3000
 
