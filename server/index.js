@@ -4,7 +4,7 @@ const app = express()
 const { Server } = require('socket.io')
 var cors = require('cors')
 const corsOptions = {
-  origin: 'https://661e79c1763d8913a27ecbda--neon-jalebi-febd55.netlify.app',
+  origin: 'https://neon-jalebi-febd55.netlify.app',
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 }
