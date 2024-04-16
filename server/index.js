@@ -6,18 +6,10 @@ var cors = require('cors')
 const corsOptions = {
   origin: 'https://neon-jalebi-febd55.netlify.app',
   credentials: true, //access-control-allow-credentials:true
-  optionSuccessStatus: 200,
 }
-app.use(cors(corsOptions))
-app.use(express.json())
-app.use('/', (req, res) => {
-  res.send('Its webrtc server')
-})
-const port = process.env.PORT || 3000
 
-app.listen(port, '0.0.0.0', () => {
-  console.log('Backend server is running')
-})
+app.use(cors(corsOptions))
+
 const io = new Server(8000, {
   cors: true,
 })
